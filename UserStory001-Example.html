@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Client Onboarding for Surety Bond Application</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 40px;
+        color: #333;
+    }
+    h1, h2 {
+        color: #1a4d7a;
+    }
+    .section {
+        margin-bottom: 25px;
+    }
+    ul {
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Title: New Client Onboarding for Surety Bond Application</h1>
+
+<div class="section">
+    <h2>User Story</h2>
+    <p>
+        As a new surety bond company client (applicant), I want to complete an online onboarding form 
+        with my personal, ownership, company, and bond requirement details (risk to insure), 
+        so that I can submit my application quickly and begin the underwriting process.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Acceptance Criteria</h2>
+
+    <h3>Personal Information</h3>
+    <p>Client can enter:</p>
+    <ul>
+        <li>Full legal name</li>
+        <li>Email address</li>
+        <li>Phone number</li>
+        <li>Home address</li>
+        <li>Date of birth</li>
+    </ul>
+    <p>Required fields must be validated before continuing.</p>
+
+    <h3>Ownership Information</h3>
+    <p>Applicant can add one or more owners/shareholders.</p>
+    <p>For each owner:</p>
+    <ul>
+        <li>Full name</li>
+        <li>Ownership percentage</li>
+        <li>Role / Title</li>
+        <li>Address</li>
+    </ul>
+    <p>Total ownership must equal 100%.</p>
+
+    <h3>Company Information</h3>
+    <p>Applicant can enter:</p>
+    <ul>
+        <li>Legal company name</li>
+        <li>Operating name (optional)</li>
+        <li>Business address</li>
+        <li>Industry type</li>
+        <li>Years in business</li>
+        <li>Annual revenue</li>
+        <li>Number of employees</li>
+    </ul>
+
+    <h3>Risk / Bond Coverage Information</h3>
+    <p>Applicant can enter:</p>
+    <ul>
+        <li>Bond type (Bid / Performance / Labour &amp; Material / Maintenance)</li>
+        <li>Obligee / Project owner</li>
+        <li>Contract value</li>
+        <li>Bond amount requested</li>
+        <li>Project location</li>
+        <li>Start date / Completion date</li>
+    </ul>
+
+    <h3>Submission / Workflow</h3>
+    <ul>
+        <li>Applicant can save progress and return later.</li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+System validates mandatory fields before submission.
+
+Upon submission:
+Application status = Submitted
+Confirmation email sent to applicant
+Underwriting team receives notification
+
+
+Notes / Delivery Considerations
+Responsive design for desktop/mobile
+Data encrypted in transit and at rest
+Audit trail for submitted changes
+Integration point for CRM / underwriting queue
+Include Google Analytics tags to identify client location, bond type and contract value.  
